@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Cryptor</title>
+    <style>
+
+        body, html {
+            width: 400px !Important;
+        }
+
+#secret, #text, #btn1, #btn2 {
+width: 100%;
+margin: 1%;
+padding: 1%;
+}
+
+.green {
+    background-color: lightgreen;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.blue {
+    background-color: lightskyblue;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+        <input type="password" placeholder="Secret key" id="secret" name="s">
+        <textarea name="t" id="text" cols="30" rows="10">text</textarea>
+        <button id='btn1' class="green">Encrypt</button>
+        <button id='btn2' class="blue">Decrypt</button>
+
+<script src="aes.js"></script>
+<script src="cryptor.js"></script>
+
+</body>
+</html>
